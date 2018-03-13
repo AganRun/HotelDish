@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	metadata-complete="true" version="3.1">
+
+  <servlet>
+  	<servlet-name>HotelServlet</servlet-name>
+  	<servlet-class>com.shxt.hotelDish.servlet.HotelServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>HotelServlet</servlet-name>
+  	<url-pattern>/servlet.action</url-pattern>
+  </servlet-mapping>
+  
+  
+  <display-name>Welcome to Tomcat</display-name>
+
+
+	<!-- 
+		welcome-file-list标签设置优先访问的页面，从上向下的顺序访问
+	 -->
+	<welcome-file-list>
+		<welcome-file>login.jsp</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
